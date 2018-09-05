@@ -1,9 +1,9 @@
-import time
-
 import argparse
 import configparser
 import logging
 import os
+import time
+
 import torch.nn as nn
 from torch.utils.data import DataLoader
 

@@ -1,9 +1,9 @@
-import time
-
 import argparse
 import configparser
 import logging
 import os
+import time
+
 import torch.nn as nn
 from torch.utils.data import DataLoader
 
@@ -23,7 +23,7 @@ parser.add_argument("problem", help="words or speakers", choices=['words', 'spea
 
 parser.add_argument("rd", help="random or centered", choices=['random', 'centered'])
 
-parser.add_argument("file", help="file to save/load model")
+parser.add_argument("file", help="name file to save/load model")
 
 parser.add_argument("path", help="where are the shelves files")
 
@@ -48,11 +48,11 @@ if __name__ == '__main__':
 
     batch_size = int(config2["DEFAULT"]['batch_size'])
     epochs = int(config2["DEFAULT"]['epochs'])
-    embedding_dim = int(config2["DEFAULT"]['embedding_dim'])
     dropout = float(config2["DEFAULT"]['dropout'])
     train_file = config2["DEFAULT"]['train']
     val_file = config2["DEFAULT"]['val']
     load_file = config2["DEFAULT"]['preprocess']
+    embedding_dim = int(config2[my_version]['embedding_dim'])
     margin = float(config2[my_version]['margin'])
     criterion = config2[my_version]['criterion']
 

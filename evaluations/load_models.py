@@ -1,5 +1,4 @@
 import configparser
-import logging
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -57,7 +56,7 @@ def load_model(config: configparser.ConfigParser, version: str, file_words, devi
     return model_words
 
 
-def get_loader(config: configparser.ConfigParser, version: str, mod: str, problem: str, scd=False):
+def get_loader(config: configparser.ConfigParser, version: str, mod: str, problem: str):
     """
 
     Args:
@@ -65,7 +64,6 @@ def get_loader(config: configparser.ConfigParser, version: str, mod: str, proble
         version: which version to use in config
         mod: train, val or test sets
         problem: words or speakers
-        scd: if true get scd loader else get phonebook loader
 
     Returns:
 
@@ -73,10 +71,7 @@ def get_loader(config: configparser.ConfigParser, version: str, mod: str, proble
     assert mod in {"train", "val", "test"}
     batch_size = int(config[version]['batch_size'])
 
-    if scd:
-        load_file = '/idiap/temp/rcandy/SCD_PhoneBook'
-    else:
-        load_file = config[version]['preprocess']
+    load_file = config[version]['preprocess']
 
     data_test = DataAll(mod=mod, problem=problem, load_file=load_file)
     test_loader = DataLoader(data_test, shuffle=False, batch_size=batch_size)
@@ -109,13 +104,9 @@ def get_all(mod, problem, config_file, lab_to_word):
     config = configparser.ConfigParser()
     config.read(config_file)
 
-    test_loader = get_loader(config, 'DEFAULT', mod=mod, problem=problem, scd=False)
-
-    logging.info('\t{}_loader ok'.format(mod))
+    test_loader = get_loader(config, 'DEFAULT', mod=mod, problem=problem)
 
     label_to_word = get_label_to_word(lab_to_word)
-
-    logging.info('\tlabel_to_word ok')
     return test_loader, label_to_word, config
 
 

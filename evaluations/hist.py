@@ -14,8 +14,8 @@ def main_hist(mod, problem, config_file, version, file_words, triplet, lab_to_wo
 
     device = torch.device("cpu")
 
-    dict_models, test_loader, label_to_word, config = get_all(mod=mod, problem=problem,
-                                                              config_file=config_file, lab_to_word=lab_to_word)
+    test_loader, label_to_word, config = get_all(mod=mod, problem=problem,
+                                                 config_file=config_file, lab_to_word=lab_to_word)
 
     date = time.strftime("%d_%m_%Y")
 
