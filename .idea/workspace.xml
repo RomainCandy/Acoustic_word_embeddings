@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa9fd52b-da99-40a9-9903-3af7bf74e969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/romain.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/phonebook_lab_to_words.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Acoustic_word_emneddings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Acoustic_word_emneddings.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration_files/triplet_phonebook.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configuration_files/triplet_phonebook.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluations/hist.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/hist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluations/load_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/load_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluations/results.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluations/tsne.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/tsne.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1_ap_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/f1_ap_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_siamese.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_siamese.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_triplet.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_triplet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +52,7 @@
     <session id="1880608">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.opened" value="2" />
@@ -116,6 +102,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="133" column="64" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,6 +189,23 @@
     <option name="y" value="17" />
     <option name="width" value="1317" />
     <option name="height" value="772" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -339,7 +345,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25727773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -544,6 +549,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="133" column="64" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
